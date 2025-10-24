@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Choice Picker</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-anim"></div>
+
+  <main class="wrapper">
+    <header class="header">
+      <h1>Random Choice Picker</h1>
+      <p>Enter choices separated by <b>,</b> — press <kbd>Enter</kbd> to pick one!</p>
+    </header>
+
+    <section class="picker">
+      <div class="card">
+        <label for="textarea" class="sr-only">Choices</label>
+        <textarea id="textarea" placeholder="pizza, sushi, burger, pasta..."></textarea>
+
+        <div id="tags" class="tags" aria-live="polite"></div>
+
+        <div class="controls">
+          <button id="clear" class="btn ghost" type="button">Clear</button>
+          <button id="pick" class="btn" type="button">Pick Now</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Made by Ezgi Akbaş </small>
+    </footer>
+  </main>
+
+  <template id="confetti">
+    <span class="confetti"></span>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
